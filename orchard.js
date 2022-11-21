@@ -53,7 +53,7 @@ let totalAcres = new Array();
 
 for (let s = 0; s < fujiAcres.length; s++) {
     totalAcres.push(fujiAcres[s] + galaAcres[s] + pinkAcres[s]);
-    console.log(totalAcres);
+    console.log(totalAcres[s]);
 }
 console.log(totalAcres);
 
@@ -70,7 +70,13 @@ console.log(totalAcres);
     Log `averageDailyAcres` to the console.
 */
 
-// CODE HERE
+let theNum = 0;
+let averageDailyAcres;
+for (let t = 0; t < totalAcres.length; t++) {
+    theNum += totalAcres[t];
+    averageDailyAcres = theNum / totalAcres.length;
+    console.log(averageDailyAcres)
+}
 
 
 
@@ -108,11 +114,15 @@ console.log(totalAcres);
 let acresLeft = 174
 let days = 0
 
-// CODE HERE
+for (acresLeft; acresLeft > 0; acresLeft--) {
+    days++
+    console.log(days)
+}
+console.log(days)
 
 
 
-// PROBLEM 4
+// PROBLEM 4\\\
 
 /*
     Your next task is to create 3 arrays
