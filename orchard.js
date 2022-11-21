@@ -48,9 +48,9 @@ const pinkPrice = .55
 
     Log `totalAcres` to the console.
 */
-
+/*Started with new array because thats the only way i could make it work. */
 let totalAcres = new Array();
-
+/*Sure this is wrong but its the only solution i could come up with.*/
 for (let s = 0; s < fujiAcres.length; s++) {
     totalAcres.push(fujiAcres[s] + galaAcres[s] + pinkAcres[s]);
     console.log(totalAcres[s]);
@@ -72,6 +72,7 @@ console.log(totalAcres);
 
 let theNum = 0;
 let averageDailyAcres;
+/*The averages that came out seemed alttile long.*/
 for (let t = 0; t < totalAcres.length; t++) {
     theNum += totalAcres[t];
     averageDailyAcres = theNum / totalAcres.length;
@@ -113,7 +114,7 @@ for (let t = 0; t < totalAcres.length; t++) {
 
 let acresLeft = 174
 let days = 0
-
+/*This was an attempt at the problem, unsuccessful the only it shows is NAN*/
 for (acresLeft; acresLeft > 0; acresLeft--) {
     days++
     console.log(days)
